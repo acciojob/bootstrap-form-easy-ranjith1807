@@ -14,39 +14,60 @@
 		<h1 class="text-center p-3">Internship Form</h1>
 		<div class="row g-3">
 	<div class="col-sm-4">
-		<label for="first-name-input" class="form-lable">First Name</label>
+		<label for="first-name-input" class="form-label">First Name</label>
 		<input id="first-name-input" class="form-control" type="text" required>
+	<div class="valid-feedback">
+      First name required!
+    </div>
 	</div>
 	<div class="col-sm-4">
-		<label for="last-name-input" class="form-lable">Last Name</label>
+		<label for="last-name-input" class="form-label">Last Name</label>
 		<input id="last-name-input" type="text" class="form-control" required>
+	<div class="valid-feedback">
+      Last name required!
+    </div>
 	</div>
 	<div class="col-sm-4">
-		<label for="email-input" class="form-lable">Email Address</label>
+		<label for="email-input" class="form-label">Email Address</label>
 		<input id="email-input" type="email" class="form-control" placeholder="xyz@abc.com" required>
+	<div class="valid-feedback">
+      Email required!
+    </div>
 	</div>
 	<div class="col-sm-6">
-		<label for="college-input" class="form-lable">College</label>
+		<label for="college-input" class="form-label">College</label>
 		<input id="college-input" type="text" class="form-control" required>
+	<div class="valid-feedback">
+      Please provide a valid college.
+    </div>
 	</div>
 	<div class="col-sm">
-		<label for="grad-year-select" class="form-lable">Graduation Year</label>
-		<select id="grad-year-select" class="form-select required>
+		<label for="grad-year-select" class="form-label">Graduation Year</label>
+		<select id="grad-year-select" class="form-select" required>
 			<option value="" disabled selected hidden>Choose...</option>
 			<option value="option1">2020</option>
 			<option value="option2">2021</option>
 			<option value="option3">2022</option>
 			<option value="option4">2023</option>
 		</select>
+		<div class="valid-feedback">
+      Please select a valid Graduation Year.
+    </div>
 	</div>
 	<div class="col-sm">
-		<label for="roll-no-input" class="form-lable">Roll No.</label>
+		<label for="roll-no-input" class="form-label">Roll No.</label>
 		<input id="roll-no-input" type="text" class="form-control" required>
+<div class="valid-feedback">
+      Please provide a valid Roll no.
+    </div>
 	</div>
-			</div>
+		
 	<div class="col-12">
 		<input id="conditions-checkbox" class="form-check-input" required type="checkbox">
-		<label for="conditions-checkbox" class="form-lable">Agree to terms and conditions</label>
+		<label for="conditions-checkbox" class="form-label">Agree to terms and conditions</label>
+		<div class="valid-feedback">
+      You must agree before submitting.
+    </div>
 	</div>
 	<div class="col-12">	
 		<button class="bg-primary text-white p-2 border-0"type="submit">Submit form</button>
