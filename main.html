@@ -9,21 +9,28 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="m-2 p-2" style="width:"1000px; height:500px">
+	
+	<form class="row needs-validation border m-2 p-2" novalidate>
 		<h1 class="text-center p-3">Internship Form</h1>
-		<div class="d-flex flex-row p-3 m-3 justify-content-evenly">
-		<label for="first-name-input">First Name</label> <br>
+		<div class="row g-3">
+	<div class="col-sm-4">
+		<label for="first-name-input">First Name</label>
 		<input id="first-name-input" type="text" required>
-		<label for="last-name-input">Last Name</label> <br>
+	</div>
+	<div class="col-sm-4">
+		<label for="last-name-input">Last Name</label>
 		<input id="last-name-input" type="text" required>
-		<label for="email-input">Email Address</label> <br>
-		<input id="email-input" type="email" required>
-		</div>
-		<div class="d-flex flex-row p-3 m-3 justify-content-evenly">
+	</div>
+	<div class="col-sm-4">
+		<label for="email-input">Email Address</label>
+		<input id="email-input" type="email" placeholder="xyz@abc.com" required>
+	</div>
+	<div class="col-sm-6">
+		<label for="college-input">College</label>
 		<input id="college-input" type="text" required>
-		<label for="college-input">College</label> <br>
-		<input id="college-input" type="text" required>
-		<label for="year">Graduation Year</label> <br>
+	</div>
+	<div class="col-sm">
+		<label for="year">Graduation Year</label>
 		<select id="year" required>
 			<option value="" disabled selected hidden>Choose...</option>
 			<option value="option1">2020</option>
@@ -31,15 +38,20 @@
 			<option value="option3">2022</option>
 			<option value="option4">2023</option>
 		</select>
-		<label for="roll-no-input">Roll No.</label> <br>
+	</div>
+	<div class="col-sm">
+		<label for="roll-no-input">Roll No.</label>
 		<input id="roll-no-input" type="text" required>
-		</div>
+	</div>
+			</div>
+	<div class="col-12">
 		<input id="conditions-checkbox" required type="checkbox">
 		<label for="conditions-checkbox">Agree to terms and conditions</label>
-		
-		<br>	
+	</div>
+	<div class="col-12">	
 		<button class="bg-primary text-white p-2 border-0"type="submit">Submit form</button>
 	</div>
+</form>
 
 	
     <script type="text/javascript" src="./script.js">
